@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+:root {
+  &,
+  &.theme-1 {
+    --color-blue-300: hsl(225, 21%, 49%);
+    --color-blue-400: hsl(224, 28%, 35%);
+    --color-blue-500: hsl(222, 26%, 31%);
+    --color-blue-900: hsl(222, 26%, 31%);
+    --color-blue-600: hsl(223, 31%, 20%);
+    --color-blue-700: hsl(224, 36%, 15%);
+
+    --color-red-500: hsl(6, 63%, 50%);
+    --color-red-600: hsl(6, 70%, 34%);
+
+    --color-gray-300: hsl(28, 16%, 80%);
+    --color-gray-400: hsl(30, 25%, 89%);
+    --color-gray-500: hsl(28, 16%, 65%);
+    --color-gray-700: hsl(221, 14%, 31%);
+    --color-gray-900: hsl(28, 16%, 65%);
+
+    --color-screen-slate-100: rgb(255, 255, 255);
+    --font-league-spartan: "League Spartan", sans-serif;
+  }
+  &.theme-2 {
+    --color-blue-300: hsl(185, 42%, 37%);
+    --color-blue-400: hsl(185, 58%, 25%);
+    --color-blue-500: hsl(0, 0%, 90%);
+    --color-blue-900: hsl(185, 58%, 25%);
+    --color-blue-600: hsl(0, 5%, 81%);
+    --color-blue-700: hsl(0, 0%, 93%);
+
+    --color-red-500: hsl(25, 98%, 40%);
+    --color-red-600: hsl(25, 99%, 27%);
+
+    --color-gray-300: hsl(28, 16%, 80%);
+    --color-gray-400: hsl(30, 25%, 89%);
+    --color-gray-500: hsl(28, 16%, 65%);
+    --color-gray-700: hsl(60, 10%, 19%);
+    --color-gray-900: hsl(28, 16%, 65%);
+
+    --color-slate-100: hsl(60, 10%, 19%);
+    --font-league-spartan: "League Spartan", sans-serif;
+  }
+  &.theme-3 {
+    --color-blue-300: hsl(281, 89%, 26%);
+    --color-blue-400: hsl(285, 91%, 52%);
+    --color-blue-500: hsl(268, 75%, 9%);
+    --color-blue-600: hsl(268, 71%, 12%);
+    --color-blue-700: hsl(268, 71%, 12%);
+    --color-blue-900: hsl(285, 91%, 52%);
+
+    --color-red-500: hsl(176, 100%, 44%);
+    --color-red-600: hsl(177, 92%, 70%);
+
+    --color-gray-300: hsl(285, 91%, 52%);
+    --color-gray-400: hsl(268, 47%, 21%);
+    --color-gray-500: hsl(285, 91%, 52%);
+    --color-gray-700: hsl(52, 100%, 62%);
+    --color-gray-900: hsl(285, 91%, 52%);
+
+    --color-screen-slate-100: hsl(52, 100%, 62%);
+    --font-league-spartan: "League Spartan", sans-serif;
+  }
+}
+
+@layer components {
+  .shadow-gray {
+    box-shadow: 0 3px 0 var(--color-gray-900);
+
+    &:active {
+      box-shadow: 0 2px 0 var(--color-gray-900);
+    }
+  }
+  .shadow-blue {
+    box-shadow: 0 3px 0 var(--color-blue-900);
+
+    &:active {
+      box-shadow: 0 2px 0 var(--color-blue-900);
+    }
+  }
+  .shadow-red {
+    box-shadow: 0 3px 0 var(--color-red-600);
+
+    &:active {
+      box-shadow: 0 2px 0 var(--color-red-600);
+    }
+  }
+}
