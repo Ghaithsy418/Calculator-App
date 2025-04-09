@@ -55,7 +55,10 @@ function Calculator() {
         Reset
       </button>
       <button
-        onClick={() => setCalculate(String(getResult()))}
+        onClick={() => {
+          setCalculate(String(getResult()));
+          setOperator("");
+        }}
         className="shadow-red text- col-start-3 col-end-5 cursor-pointer rounded-md bg-red-500 text-2xl font-bold transition-all duration-300 hover:bg-red-600"
       >
         =
